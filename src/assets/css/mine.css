@@ -1,0 +1,218 @@
+th {
+    vertical-align: top !important;
+}
+
+.noOverflowX {
+    overflow-x: auto !important;
+}
+
+#main section {
+    padding: 4em 0 4em 0 !important;
+}
+
+#main section ul, ol {
+    margin-bottom: 0;
+}
+
+section > div > ul {
+    margin-bottom: 1em !important;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin: 0 0 1em 0;
+}
+
+section code {
+    font-size: 1.0rem;
+}
+
+section li {
+    font-size: 1.2rem;
+}
+
+.abstract #table-of-contents{
+    display: none;
+}
+
+.abstract div {
+    margin-bottom: 2em;
+}
+
+#table-of-contents {
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+#table-of-contents ol {
+    list-style-type: upper-roman;
+    margin: 0;
+}
+
+#table-of-contents li a {
+    color: #3d4449;
+}
+
+.mdxeditor-diff-source-wrapper {
+    min-height: 450px;
+}
+
+.mdxeditor-toolbar {
+    top: 0px !important;
+}
+
+.cm-panels.cm-panels-bottom {
+    bottom: 90px !important;
+    border: 1px solid !important;
+}
+
+.cm-search.cm-panel label {
+    display: inline-block;
+}
+
+.cm-search.cm-panel button {
+    margin: .2em .6em .2em 0 !important;
+    border: 0 !important;
+}
+
+.cm-search.cm-panel input {
+    appearance: auto;
+    opacity: 1;
+}
+
+.cm-search.cm-panel button[name="close"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: large !important;
+    margin: 5px 0 !important;
+}
+
+.mdxeditor-popup-container button[type="submit"]{
+    background-color: #f56a6a;
+    color: #ffffff !important;
+    border: 1px solid #f56a6a !important;
+}
+
+.mdxeditor-popup-container button[type="reset"]{
+    color: #f56a6a;
+    background-color: #ffffff;
+    border: 1px solid #f56a6a !important;
+}
+
+.editorForm {
+    caret-color: #f56a6a !important;
+}
+
+.cm-nonmatchingBracket, .cm-matchingBracket {
+    outline: 0 !important;
+}
+
+/*
+.fixedBtns {
+    background-color: rgb(255,255,255,0.5);
+    position: sticky;
+    bottom: 0;
+    padding: 10px !important;
+    z-index: 1000;
+}
+
+.fixedBtns input[type="reset"] {
+    background-color: #ffffff !important;
+}
+*/
+
+.actionsCenter {
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar {
+    /* position: fixed; */
+}
+
+#sidebar p {
+    font-size: 1em;
+}
+
+.navListIcon {
+    float: right;
+    font-size: 0.5em;
+    margin-left: 5px;
+}
+
+.icons.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    transform: translateX(-100%);
+}
+
+.toggle:before {
+    color: #f56a6a !important;
+}
+
+@media screen and (max-width: 736px) {
+    .toggle:before {
+        color: #ffffff !important;
+    }
+    .toggle:after {
+        background-color: #f56a6a !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .toggle {
+        display: none !important;
+    }
+
+    #header {
+        padding-top: 3em !important;
+    }
+}
+
+.toastify-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+}
+
+#shortcuts .icon {
+    color: #3d4449;
+}
+
+#shortcuts .icon:hover {
+    color: #f56a6a;
+}
+
+.genericModal {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: white; 
+    opacity: 0.8; 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+}
+
+.modalForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+.modalForm input {
+    height: 40px;
+    margin: 10px;
+}
+
+.modalForm input[type="text"] {
+    width: 200px;
+}
