@@ -1,8 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Modal = (props) => {
     const [text, setText] = useState("");
 
+    useEffect(() => {
+        const handleEscapeKey = (event) => {
+            if (event.key === 'Escape') {
+                cancel();
+            }
+        };
+        document.addEventListener('keydown', handleEscapeKey);
+        return () => {
+            document.removeEventListener('keydown', handleEscapeKey);
+        };
+    }, []);
+    
     const submit = (e) => {
         if (e) {
             e.preventDefault();
@@ -16,10 +28,11 @@ const Modal = (props) => {
     }
     
     return (
-        <div className="genericModal" onClick={cancel}>
+        <div className="genericModal">
             <form onSubmit={submit}>
                 <div className='modalForm'>
                     <input
+                        autoFocus 
                         type="text"
                         name="query"
                         id="query"
