@@ -4,10 +4,10 @@ const path = require('path');
 
 module.exports = {
   packagerConfig: {
-    icon: path.join(process.cwd(), 'src/assets/icons/icon512.ico'),
+    icon: path.join(process.cwd(), 'src/assets/icons/logo512.ico'),
     asar: true,
     extraResource: [
-      path.join(process.cwd(), "src/assets/icons/logo.png")
+      path.join(process.cwd(), "src/assets/icons/logo36.png")
     ],
   },
   rebuildConfig: {},

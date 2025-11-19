@@ -176,7 +176,7 @@ const Form = ({ id, navigate, popup }) => {
             e.preventDefault();
         }
         if (filename.length === 0 || description.length === 0) {
-            popup("Please enter a filename and description before saving.");
+            popup("Please enter a filename and description before saving.", "error");
             return;
         }
         let fileWithExt = filename.endsWith(".md") ? filename : filename + ".md";
