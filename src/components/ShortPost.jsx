@@ -22,6 +22,7 @@ const ShortPost = ({ id, filename, description, pos }) => {
             <p>{description}</p>
             <ul className="actions">
                 <li><span onClick={() => { context.navigate("show", id) }} className="button small">Read</span></li>
+                <li><span onClick={() => { context.navigate("edit", id) }} className="button primary small">Edit</span></li>
             </ul>
         </article>
     );

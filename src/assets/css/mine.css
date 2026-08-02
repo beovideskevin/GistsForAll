@@ -127,6 +127,10 @@ section li {
     justify-content: center;
 }
 
+.actionsMargin {
+    margin-top: 2em;
+}
+
 #sidebar {
     /* position: fixed; */
 }

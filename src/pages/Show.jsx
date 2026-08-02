@@ -55,7 +55,7 @@ const Show = () => {
                         <Header filename={filename} url={url} id={id} />
                         <section>
                             <div dangerouslySetInnerHTML={{__html: marked.parse(data.content)}}/>
-                            <ul className="actions actionsCenter">
+                            <ul className="actions actionsCenter actionsMargin">
                                 <li><span onClick={() => { context.navigate("edit", id) }} className="button primary small">Edit</span></li>
                                 <li><span onClick={() => { delGistAndNavigate(id) }} className="button small">Delete</span></li>
                             </ul>

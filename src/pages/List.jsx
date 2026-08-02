@@ -45,6 +45,7 @@ const List = () => {
                     <div dangerouslySetInnerHTML={{__html: marked.parse(latest.abstract)}}/>
                     <ul className="actions">
                         <li><span onClick={() => { context.navigate("show", latest.id) }} className="button small">Read</span></li>
+                        <li><span onClick={() => { context.navigate("edit", latest.id) }} className="button primary small">Edit</span></li>
                     </ul>
                 </section> }
 
