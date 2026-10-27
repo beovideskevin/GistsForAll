@@ -42,6 +42,7 @@ const codeBlockLanguages = [
   "javascript",
   "jsx",
   "json",
+  "mermaid",
   "php",
   "python",
   "graphql",
